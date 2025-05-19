@@ -711,7 +711,6 @@ html,body{
 /* faq */
 .faq-section {
   padding: 50px 20px;
-  /* background-color:#1a1a1a; */
 }
 
 .container {
@@ -723,7 +722,6 @@ html,body{
   text-align: center;
   font-size: 32px;
   margin-bottom: 30px;
-  /* color: #fff; */
 }
 .fStart{
     color:#ED4638
@@ -771,7 +769,6 @@ html,body{
 .border-line {
   min-width: 5px;
   height: 100%;
-  background-color: #35A954;
   margin-right: 15px;
 }
 
