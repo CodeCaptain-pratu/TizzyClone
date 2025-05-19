@@ -2,7 +2,6 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 a {
     text-decoration: none;
@@ -38,7 +37,7 @@ html,body{
     display: none;
 }
 .btn{
-    background-color:#e30c30;
+    background-color:#3498db;
     color:#111;
     border:none;
     padding:8px 10px;
@@ -54,7 +53,7 @@ html,body{
 .btn:hover{
   background-color:#fff;
   color:#111;
-  border:1px solid #e30c30;
+  border:1px solid #3498db;
 }
 /* Wrapper */
 #wrapper{
@@ -142,63 +141,6 @@ html,body{
     cursor: pointer;
 }
 /* application icons */
-/* .applicationIcons{
-    border:2px solid red;
-    color:#fff;
-    padding: 0.8rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.iconWrapper{
-    border:2px solid #3498db;
-    font-size: 1.2rem;
-    width:50%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding: 0.6rem;
-    border-radius: 100px;
-}
-.iconWrapper i{
-    border:2px solid #3498db;
-    padding: 12px;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.iconWrapper i:hover{
-    background-color: #3A81F5;
-}
-.applicationContentWrapper{
-    border:2px solid green;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-}
-.applicationContent{
-    border:2px solid red;
-    width:60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;;
-    gap:1rem;
-    padding: 1rem;
-}
-.applicationContent .img{
-    border:2px solid #fff;
-    width:50%;
-    width:50%;
-    border-radius: 50%;
-}
-.applicationContent .img img{
-    width:100%;
-    height:100%;
-    border-radius: 50%;
-} */
  .applicationIcons {
   color: #fff;
   padding: 1rem 0;
@@ -217,7 +159,6 @@ html,body{
   gap: 1rem;
   padding: 1rem;
   border-radius: 100px;
-  border:2px solid #c00926;
 }
 
 .iconWrapper i {
@@ -237,7 +178,7 @@ html,body{
 .applicationContentWrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   padding: 1rem;
 }
@@ -361,13 +302,11 @@ html,body{
 #hero{
     height:89%;
     width:100%;
-     /* border:2px solid green; */
      display: flex;
      justify-content: center;
      align-items: center;
 }
 #hero .heroWrapper{
-    /* border:2px solid #fff; */
     width:80%;
     height:80%;
     display: flex;
@@ -375,7 +314,6 @@ html,body{
     align-items: center;
 }
 .heroWrapper .img{
-    /* border:2px solid red; */
     width:60%;
     height: 60%;
 }
@@ -385,7 +323,6 @@ html,body{
     object-fit: cover;
 }
 .heroWrapper .text{
-    /* border:2px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,9 +337,9 @@ html,body{
     line-height:4rem;
 }
 .heroWrapper .text h4{
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: var(--font-weight-normal);
-    color: #999;
+    
 }
 .premium{
     background-color: #ED4638;
@@ -515,7 +452,6 @@ html,body{
 .intro h3 {
     margin: 0;
     font-size: 1rem;
-    color:#fff;
     font-weight: var(--font-weight-normal);
 }
 
@@ -527,7 +463,7 @@ html,body{
 
 #toggleViewBtn {
     padding: 10px 25px;
-    background-color: #e30c30;
+    background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -538,7 +474,9 @@ html,body{
 }
 
 #toggleViewBtn:hover {
-    background-color: #c00926;
+    border:1px solid #3498db;
+    background-color: #fff;
+    color:#111;
 }
 
 @media (max-width: 768px) {
@@ -581,14 +519,12 @@ html,body{
 
   .card h3 {
     margin: 0.6rem 0;
-    color: #fff;
     text-align: center;
     font-size: 1.1rem;
   }
 
   .card h4 {
     margin: 0.3rem 0;
-    color: #ddd;
     font-weight: normal;
     font-size: 0.95rem;
     text-align: center;
@@ -614,7 +550,6 @@ html,body{
     border-top: 1px solid #fff;
     padding-top: 1rem;
     font-size: 14px;
-    color: #333;
   }
 
   .details.show {
@@ -623,7 +558,6 @@ html,body{
 
   .details p {
     margin: 0.4rem 0;
-    color:#ddd;
     font-size: 1rem;
     padding: 10px 5px;
   }
@@ -685,7 +619,7 @@ html,body{
     margin-bottom: 1.5rem;
 }
 .testimonialTitle h3{
-    color:#2ecc71;
+    /* color:#2ecc71; */
 }
 .cardsContainer {
     width: 100%;
@@ -749,7 +683,7 @@ html,body{
 }
 .arrowContainer i {
     font-size: 2rem;
-    color:#2ecc71;
+    color:#3498db;
     cursor: pointer;
     transition: transform 0.2s;
 }
