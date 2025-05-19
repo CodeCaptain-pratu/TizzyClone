@@ -223,7 +223,86 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   
+// application content
+// let applications=[
+//     {
+//         title:"Faster Desktop and Mobile Webmail",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+//     {
+//         title:"Faster POP, IMAP and SMTP Protocols",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+//     {
+//         title:"Integrated Spam, Antivirus and Email Filtering",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+//     {
+//         title:"DNS Management",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+//     {
+//         title:"Dedicated Control Panel",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+//     {
+//         title:"SSL/TLS Security",
+//         data:"Enjoy lightning-fast email access and synchronization across all your devices.Seamless support for all major protocols ensures smooth sending and receiving.Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+//         img:"",
+//     },
+// ]
+ const applications = [
+    {
+      title: "Faster Desktop and Mobile Webmail",
+      data: "Enjoy lightning-fast email access and synchronization across all your devices. Seamless support for all major protocols ensures smooth sending and receiving. Optimized performance reduces lag, improves delivery speed, and boosts productivity.",
+      img: "/Img/content1.jpg",
+    },
+    {
+      title: "Faster POP, IMAP and SMTP Protocols",
+      data: "Access your emails reliably with enhanced support for POP, IMAP, and SMTP. These protocols ensure accurate delivery and sync across platforms.",
+      img: "/Img/content2.jpg",
+    },
+    {
+      title: "Integrated Spam, Antivirus and Email Filtering",
+      data: "Protect your inbox with advanced spam filters and virus protection. Automatically detect and block malicious threats before they reach you.",
+      img: "/Img/content3.jpg",
+    },
+    {
+      title: "DNS Management",
+      data: "Simplify your DNS configuration and management using intuitive tools. Make updates quickly and efficiently with full control.",
+      img: "/Img/content4.jpg",
+    },
+    {
+      title: "Dedicated Control Panel",
+      data: "Manage your email system with a dedicated control panel tailored for admins. Monitor activity, manage accounts, and view usage easily.",
+      img: "/Img/content5.jpg",
+    },
+    {
+      title: "SSL/TLS Security",
+      data: "Ensure your communication is safe with industry-standard SSL/TLS encryption. Maintain privacy and data security across your network.",
+      img: "/Img/content6.jpg",
+    }
+  ];
 
+  const icons = document.querySelectorAll('.iconWrapper i');
+  const appTitle = document.getElementById('appTitle');
+  const appData = document.getElementById('appData');
+  const appImage = document.getElementById('appImage');
+
+  icons.forEach((icon, index) => {
+    icon.addEventListener('click', () => {
+      const app = applications[index];
+      console.log(app)
+      appTitle.textContent = app.title;
+      appData.textContent = app.data;
+      appImage.src = app.img;
+    });
+  });
 // FAQ
 let arrFaq = [
   {
